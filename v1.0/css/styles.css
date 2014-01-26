@@ -1,0 +1,169 @@
+/*---Antonio Figueroa-----January 25, 2014---*/
+/*-------------------------------------------*/
+
+/*==============Basic Styling================*/
+
+/*------------------Global-------------------*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6, p, a, li,label, input{
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+/*-------------------------------------------*/
+
+/*------------------Global-------------------*/
+nav ul li{
+    float:left;
+    padding: 0 0.83333rem;
+    min-height: 25px;
+    line-height: 25px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: black;
+    color: lightgrey;
+}
+/*-------------------------------------------*/
+
+/*------------------Fonts--------------------*/
+h1{
+    font-size: 2.6em; /*26px*/
+}
+h2{
+    font-size: 2em; /*20px*/
+}
+h3{
+    font-size: 1.6em; /*16px*/
+}
+h4{
+    font-size: 1.4em; /*14px*/
+}
+h5{
+    font-size: 1.3em; /*13px*/
+}
+h6{
+    font-size: 1.2em; /*12px*/
+}
+p{
+    font-size: 1.1em; /*26px*/
+}
+a{
+    font-size: 1.1em; /*26px*/
+}
+/*-------------------------------------------*/
+
+/*----------------Containers-----------------*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.row{
+    clear:both;
+    width: auto;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.row .row {
+    width: auto;
+    /*margin:  0 -0.9375rem;*/
+    max-width: none;
+}
+/*-------------------------------------------*/
+
+/*------------------Columns------------------*/
+.oneColumn{
+    width: 8.3333%;
+}
+.twoColumns{
+    width: 16.6667%;
+}
+.threeColumns{
+    width: 25%;
+}
+.fourColumns{
+    width: 33.3333%;
+}
+.fiveColumns{
+    width: 41.6667%;
+}
+.sixColumns{
+    width: 50%;
+}
+.sevenColumns{
+    width: 58.3333%;
+}
+.eightColumns{
+    width: 66.6667%;
+}
+.nineColumns{
+    width: 75%;
+}
+.tenColumns{
+    width: 83.3333%;
+}
+.elevenColumns{
+    width: 91.6667%;
+}
+.twelveColumns{
+     width: 100%;
+ }
+.oneColumn, .twoColumns, .threeColumns, .fourColumns, .fiveColumns, .sixColumns,
+.sevenColumns, .eightColumns, .nineColumns, .tenColumns, .elevenColumns, .twelveColumns{
+    position: relative;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+
+    /*Grid color*/
+    background-color: lightskyblue;
+}
+/*-------------------------------------------*/
+/*===========================================*/
+
+/*==============Media Queries================*/
+
+/* Tablet Portrait size to standards 960px (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px){}
+
+/* Mobile Landscape to tablet portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px){}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)*/
+@media screen and  (max-width: 479px){
+    /*Containers*/
+    .wrapper{
+        width: 100%;
+    }
+    /*Navigation*/
+    nav ul li{
+        float: none;
+        width: 100%;
+        padding: 0;
+        min-height: 45px;
+        line-height: 45px;
+    }
+    /*Columns*/
+    .oneColumn, .twoColumns, .threeColumns, .fourColumns, .fiveColumns, .sixColumns,
+    .sevenColumns, .eightColumns, .nineColumns, .tenColumns, .elevenColumns, .twelveColumns{
+        width: 100%;
+    }
+}
+
+/*===========================================*/
