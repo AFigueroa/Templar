@@ -1,0 +1,215 @@
+/*================Metadata-==================*/
+/*===========================================*/
+/*------------Project Details----------------*/
+/*
+  -------------------------------------------
+    Date: January 25, 2014
+
+    Created by: Antonio Figueroa
+    Email: figueroawebdesigns@gmail.com
+    Phone: 787-209-1421
+
+    Project Name: Templar v1.
+    Client Name: Self
+    Email: n/a
+    Phone: n/a
+    -------------------------------------------
+*/
+/*-------------------------------------------*/
+
+/*-------------Color Palette-----------------*/
+/*
+    Medium brown = #695848
+    Minty green = #9BE38F
+*/
+/*-------------------------------------------*/
+/*===========================================*/
+
+/*==============Basic Styling================*/
+/*===========================================*/
+
+/*-----------------Global--------------------*/
+/*-------------------------------------------*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6, p, a, li,label, input{
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+}
+/*-------------------------------------------*/
+
+/*----------------Navigation-----------------*/
+/*-------------------------------------------*/
+
+nav ul li{
+    float:left;
+    padding: 0 0.83333rem;
+    min-height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #695848;
+    color: #9BE38F;
+}
+nav ul li:hover{
+    background-color:#9BE38F;
+    color: #695848;
+}
+nav ul li a:visited{
+    color: inherit;
+}
+/*-------------------------------------------*/
+
+/*------------------Fonts--------------------*/
+/*-------------------------------------------*/
+h1{
+    font-size: 2.6em; /*26px*/
+}
+h2{
+    font-size: 2em; /*20px*/
+}
+h3{
+    font-size: 1.6em; /*16px*/
+}
+h4{
+    font-size: 1.4em; /*14px*/
+}
+h5{
+    font-size: 1.3em; /*13px*/
+}
+h6{
+    font-size: 1.2em; /*12px*/
+}
+p{
+    font-size: 1.1em; /*26px*/
+}
+a{
+    font-size: 1.1em; /*26px*/
+}
+/*-------------------------------------------*/
+
+/*----------------Containers-----------------*/
+/*-------------------------------------------*/
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.row{
+    clear:both;
+    width: auto;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.row .row {
+    width: auto;
+    /*margin:  0 -0.9375rem;*/
+    max-width: none;
+}
+/*-------------------------------------------*/
+
+/*------------------Columns------------------*/
+/*-------------------------------------------*/
+.one{
+    width: 8.3333%;
+}
+.two{
+    width: 16.6667%;
+}
+.three{
+    width: 25%;
+}
+.four{
+    width: 33.3333%;
+}
+.five{
+    width: 41.6667%;
+}
+.six{
+    width: 50%;
+}
+.seven{
+    width: 58.3333%;
+}
+.eight{
+    width: 66.6667%;
+}
+.nine{
+    width: 75%;
+}
+.ten{
+    width: 83.3333%;
+}
+.eleven{
+    width: 91.6667%;
+}
+.twelve{
+     width: 100%;
+ }
+.column, .columns{
+    position: relative;
+    float: left;
+    min-height: 35px;
+    line-height: 35px;
+    display: block;
+
+    /*Grid color*/
+    background-color: lightskyblue;
+}
+.column:nth-child(2), .columns:nth-child(2){
+    background-color: #695848;
+}
+.row .column *, .row .columns *{
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
+}
+/*-------------------------------------------*/
+/*===========================================*/
+
+/*==============Media Queries================*/
+/*===========================================*/
+
+/* Tablet Portrait size to standards 960px (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px){}
+
+/* Mobile Landscape to tablet portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px){}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)*/
+@media screen and  (max-width: 479px){
+    /*Containers*/
+    .wrapper{
+        width: 100%;
+    }
+    /*Navigation*/
+    nav ul li{
+        float: none;
+        width: 100%;
+        padding: 0;
+        min-height: 45px;
+        line-height: 45px;
+    }
+    /*Fonts*/
+    h1,h2,h3,h4,h5,h6,p{
+        text-align: center;
+        margin: 0 auto;
+    }
+    /*Columns*/
+    .column, .columns{
+        width: 100%;
+    }
+}
+/*===========================================*/
