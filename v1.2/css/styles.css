@@ -9,7 +9,7 @@
     Email: figueroawebdesigns@gmail.com
     Phone: 787-209-1421
 
-    Project Name: Templar v1.
+    Project Name: Templar v1.2
     Client Name: Self
     Email: n/a
     Phone: n/a
@@ -20,7 +20,7 @@
 /*-------------Color Palette-----------------*/
 /*
     Medium brown = #695848
-    Minty green = #9BE38F
+    Light sky blue = lightskyblue
 */
 /*-------------------------------------------*/
 /*===========================================*/
@@ -36,11 +36,19 @@
     text-decoration: none;
     list-style: none;
 }
+.row .column *, .row .columns *{
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
+}
 body{
     font-size: 10px;
 }
 h1, h2, h3, h4, h5, h6, p, a, li,label, input{
     font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, label, input{
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
 }
 h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
@@ -52,62 +60,77 @@ img{
 
 /*----------------Navigation-----------------*/
 /*-------------------------------------------*/
-
 nav ul li{
     float:left;
     padding: 0 0.83333rem;
-
     text-align: center;
-    color: #9BE38F;
 }
 nav ul li a{
-    font-size: 1.3em;
     min-height: 25px;
     line-height: 25px;
+}
+nav ul li a p{
+    font-size: 1.3em;
     background-color: #695848;
-    color: #9BE38F;
+    color: lightskyblue;
     padding-left: 0.83333rem;
     padding-right: 0.83333rem;
-
 }
-nav ul li a:hover{
-    background-color:#9BE38F;
+nav ul li a p:hover{
+    background-color:lightskyblue;
     color: #695848;
 }
 nav ul li a:visited{
     color: inherit;
 }
+/*nav ul li{*/
+    /*float: none;*/
+    /*width: 100%;*/
+    /*padding: 0;*/
+/*}*/
+/*nav ul li a{*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*min-height: 45px;*/
+    /*line-height: 45px;*/
+/*}*/
+/*nav ul li a p{*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*min-height: 45px;*/
+    /*line-height: 45px;*/
+/*}*/
 /*-------------------------------------------*/
 
 /*------------------Fonts--------------------*/
 /*-------------------------------------------*/
 h1{
-    font-size: 2.6em; /*26px*/
+    font-size: 3.2em; /*26px*/
 }
 h2{
-    font-size: 2em; /*20px*/
+    font-size: 2.4em; /*20px*/
 }
 h3{
-    font-size: 1.6em; /*16px*/
+    font-size: 1.8em; /*16px*/
 }
 h4{
-    font-size: 1.4em; /*14px*/
+    font-size: 1.6em; /*14px*/
 }
 h5{
-    font-size: 1.3em; /*13px*/
+    font-size: 1.4em; /*13px*/
 }
 h6{
-    font-size: 1.2em; /*12px*/
+    font-size: 1.3em; /*12px*/
 }
 p{
-    font-size: 1.1em; /*26px*/
+    font-size: 1.2em; /*26px*/
 }
 a{
-    font-size: 1.1em; /*26px*/
+    font-size: 1.2em; /*26px*/
 }
 /*-------------------------------------------*/
 
-/*----------------Containers-----------------*/
+/*--------------------Rows-------------------*/
 /*-------------------------------------------*/
 .wrapper{
     width: 90%;
@@ -125,6 +148,9 @@ a{
     width: auto;
     /*margin:  0 -0.9375rem;*/
     max-width: none;
+}
+.row:first-of-type{
+    margin-top: 0;
 }
 /*-------------------------------------------*/
 
@@ -179,10 +205,6 @@ a{
 .column:nth-child(2), .columns:nth-child(2){
     background-color: #695848;
 }
-.row .column *, .row .columns *{
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
-}
 /*-------------------------------------------*/
 /*===========================================*/
 
@@ -206,15 +228,19 @@ a{
         float: none;
         width: 100%;
         padding: 0;
-        min-height: 44px;
-        line-height: 44px;
     }
     nav ul li a{
         width: 100%;
         text-align: center;
         min-height: 45px;
         line-height: 45px;
-        padding: 14px 48%;
+    }
+    nav ul li a p{
+        width: 100%;
+        text-align: center;
+        min-height: 45px;
+        line-height: 45px;
+        padding: 0;
     }
     /*Fonts*/
     h1,h2,h3,h4,h5,h6,p{
