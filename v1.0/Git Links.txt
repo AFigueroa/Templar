@@ -1,0 +1,8 @@
+January 25 2014
+Antonio Figueroa     
+
+Github Repository: Templar
+https://github.com/AFigueroa/Templar/tree/gh-pages
+
+Preview: v1.0
+http://afigueroa.github.io/Templar/v1.0/index.html
