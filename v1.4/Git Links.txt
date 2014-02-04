@@ -1,0 +1,8 @@
+January 26, 2014
+Antonio Figueroa     
+
+Github Repository: Templar
+https://github.com/AFigueroa/DWS_II/tree/gh-pages
+
+B8: CSS Transitions, Transforms, Animations
+http://afigueroa.github.io/DWS_II/B8_Figueroa_Antonio/index.html

@@ -1,0 +1,81 @@
+/*================Color Palette===============*/
+/*
+    Night grey: #30302F
+    Dark grey: #575555
+    Warm grey: #C7C4C2
+    Creamy white: #FFFBF9
+    Darkbark brown: #695848
+    Orange kick: #FF703E
+    Balance blue: #C2E3FF
+*/
+/*============================================*/
+
+/*---------------Color Scheme-----------------*/
+*{
+    color: #30302F;
+}
+body{
+    background-color: #575555;
+}
+.row{
+    background-color: #FFFBF9;
+}
+div#nav{
+    background-color: transparent;
+}
+nav ul li p{
+    background-color: #30302F;
+    color: #C7C4C2;
+}
+nav ul li p:hover{
+    background-color: #C7C4C2;
+    color: #30302F;
+}
+a{
+    color: #FF703E;
+}
+a:hover{
+    color: #575555;
+}
+/*-------------------------------------------*/
+/*===========================================*/
+
+/*=================Animations================*/
+/*Transition: Opacity (on hover: show)*/
+/*------------------------------------*/
+.transition_opacity{
+    position: absolute;
+    right: 0;
+    left:0;
+    top: 0;
+    bottom: 1200px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease 0s;
+    -moz-transition: opacity 1s ease 0s;
+    -ms-transition: opacity 1s ease 0s;
+    -o-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
+}
+.transition_opacity:hover{
+    z-index: 1;
+    opacity: 1;
+}
+/*------------------------------------*/
+/*Transform: Font Size (enlarge)*/
+.transform_scale{
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -ms-transition: scale 1s ease 0s;
+    transition: scale 1s ease 0s;
+}
+.transform_scale:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/*-------------------------------------------*/
+/*===========================================*/
