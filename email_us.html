@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Antonio Figueroa                     January 25, 2014
+
+                  Project: B8: Transitions
+
+-->
+<html lang="en">
+<head>
+    <title>Email Us</title>
+    <meta charset="utf-8">
+    <!--
+                               Page Specific Stylesheets
+    -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <!--
+                                  Templar Stylesheets
+    -->
+    <link rel="stylesheet" href="templar/templar.css" type="text/css">
+
+    <!--
+                                      Font Styles
+    -->
+    <!--Name: "Lato" src=http://www.google.com/fonts#QuickUsePlace:quickUse/Family:Lato:400,300,100,700,900-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!--
+                                  Full size Navigation
+    -->
+    <div class="row" id="nav">
+        <nav>
+            <ul>
+                <li><a href="home.html"><p>Home</p></a></li>
+                <li><a href="#"><p>Specs</p></a>
+                    <ul class="subNav">
+                        <li><a href="#"><p>Grid</p></a></li>
+                        <li><a href="#"><p>Fonts</p></a></li>
+                        <li><a href="#"><p>Elements</p></a></li>
+                        <li><a href="#"><p>Transitions</p></a></li>
+                    </ul>
+                </li>
+                <li><a href="samples.html"><p>Samples</p></a></li>
+                <li><a href="email_us.html"><p>Email Us</p></a></li>
+                <li><a href="https://github.com/AFigueroa/Templar"><p>Git Repo</p></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--
+                                      Wrapper 90%
+    -->
+    <div class="wrapper">
+        <div class="row">
+            <div class="twelve columns">
+               <h1>Email Us</h1>
+            </div>
+        </div>
+        <div class="row">
+            <form class="six columns" id="email_us_form">
+                <label class="clear_both one columns">Name:</label><input class="three columns" type="text" required placeholder="e.g. John Doe">
+                <label class="clear_both one columns">CC:</label><input class="three columns" type="text" required placeholder="e.g. jdoe@email.com">
+                <label class="clear_both one columns clear_both">Subject:</label><input type="text" class="six columns" placeholder="The nature of your query here.">
+                <label class="clear_both  one columns">Content:</label><textarea required class="twelve columns" placeholder="Write your question or comments here."></textarea>
+                <button class="eight columns" id="email_submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
